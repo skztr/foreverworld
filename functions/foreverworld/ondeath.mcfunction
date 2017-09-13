@@ -1,3 +1,6 @@
+# Respawn into the holding chamber
+spawnpoint @a[score_fwdied_min=1] 0 4 -29999900
+
 # Allow player to be repositioned when they respawn
 scoreboard players set @a[score_fwdied_min=1] fwresurrect 1
 
