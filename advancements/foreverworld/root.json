@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "initialize": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "rewards": {
+    "function": "foreverworld:trigger"
+  },
+  "requirements": [
+    [
+      "initialize"
+    ]
+  ]
+}
