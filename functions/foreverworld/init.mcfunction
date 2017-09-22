@@ -3,6 +3,7 @@ scoreboard players set @a fwinit 1
 
 # Make compasses point "north"
 setworldspawn 0 0 -29999900
+gamerule spawnRadius 0
 
 # Death tracking
 scoreboard objectives add fwdied stat.deaths
