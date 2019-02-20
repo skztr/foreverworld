@@ -16,29 +16,6 @@ It acts as normal survival Minecraft, with two key differences:
 The goal of the above is simple: It is possible to lose your base, if you are
 not careful. But it is also possible to discover an old base, if you are lucky.
 
-## QuickStart
-
-To play ForeverWorld, create a folder under the Minecraft "saves" folder, with
-the name of a new world you wish to create, eg:
-`~/.minecraft/saves/myWorld`, and copy this project to a `data` directory
-within, such that the directory structure looks similar to:
-
-    myWorld
-    └── data
-        ├── advancements
-        │   └── foreverworld
-        │       └── ...
-        └── functions
-            └── foreverworld
-                └── ...
-
-Next, create a new world within Minecraft, with the same name you used for the
-new folder under the "saves" folder. Options such as Large Biomes and Superflat
-should be compatible, though "Bonus Chest" is not.
-
-When you first enter the world, the foreverworld functions should automatically
-trigger, teleporting you to a new random starting location.
-
 # Notes
 
 The number "24,000" can be easily modified, to make it more, or less, likely
