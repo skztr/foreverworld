@@ -1,19 +1,27 @@
-# Only run once
-scoreboard players set @a fwinit 1
+# Test Tracking
+scoreboard objectives add fwtest dummy
+scoreboard objectives add fwdebug dummy
+scoreboard objectives add fwdebugx dummy
+scoreboard objectives add fwdebugy dummy
+scoreboard objectives add fwdebugz dummy
 
-# Make compasses point "north"
-setworldspawn 0 0 -29999900
-gamerule spawnRadius 0
+# Delays to avoid race conditions
+scoreboard objectives add fwcountdown dummy
 
-# Death tracking
-scoreboard objectives add fwdied stat.deaths
-scoreboard objectives add fwresurrect dummy
-scoreboard objectives add fwsleeping dummy
+# For forcing a sunrise without a bed
+scoreboard objectives add fwdawn dummy
 
-# Prepare Respawn Area
-# The foreverworld:init:chamber function will trigger once we arrive
-gamemode spectator @a
-tp @a 0 4 -29999900
+# Death Tracking
+scoreboard objectives add fwdead deathCount
 
-# Main Entrypoint
-gamerule gameLoopFunction foreverworld:gameloop
+# Total Deaths, just for statistics
+scoreboard objectives add fwdied deathCount
+
+# Unique Id for Spawnpoint tracking
+scoreboard objectives add fwpsid dummy
+scoreboard objectives add fwpsfind dummy
+
+function foreverworld:state
+
+tag @e[tag=foreverworld_marker] add foreverworld_marker_restarted
+execute unless entity @e[type=minecraft:armor_stand,tag=foreverworld_marker] run function foreverworld:init/spawnchunks

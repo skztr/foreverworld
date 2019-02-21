@@ -1,5 +1,6 @@
 {
 	"values": [
-		"foreverworld:trigger"
+		"foreverworld:state",
+		"foreverworld:test/debug/tick"
 	]
 }
