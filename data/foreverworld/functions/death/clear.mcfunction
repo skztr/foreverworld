@@ -15,6 +15,10 @@ execute in overworld at @e[tag=foreverworld_marker] run spawnpoint @s ~ ~ ~
 # Revoke all Advancements
 advancement revoke @s everything
 
+# The dead have never seen the Dragon
+tag @s remove foreverworld_player_dragon_view
+tag @s remove foreverworld_player_dragon_ritual
+
 # Clear EnderChest
 replaceitem entity @s enderchest.0 minecraft:air
 replaceitem entity @s enderchest.1 minecraft:air

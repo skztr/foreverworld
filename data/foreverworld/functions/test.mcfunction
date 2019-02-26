@@ -27,6 +27,12 @@ execute if entity @s[scores={fwtest=24}] run function foreverworld:test/024_deat
 execute if entity @s[scores={fwtest=25}] run function foreverworld:test/025_death_at_noon_should_ts
 execute if entity @s[scores={fwtest=26}] run function foreverworld:test/026_death_at_night_should_ts
 execute if entity @s[scores={fwtest=27}] run function foreverworld:test/027_death_in_rain_should_clear
+execute if entity @s[scores={fwtest=28}] run function foreverworld:test/028_dragon_should_respawn_a
+execute if entity @s[scores={fwtest=29}] run function foreverworld:test/029_dragon_should_respawn_b
+execute if entity @s[scores={fwtest=30}] run function foreverworld:test/030_dragon_should_respawn_c
+execute if entity @s[scores={fwtest=31}] run function foreverworld:test/031_dragon_should_respawn_d
+execute if entity @s[scores={fwtest=32}] run function foreverworld:test/032_dragon_should_respawn_e
+execute if entity @s[scores={fwtest=33}] run function foreverworld:test/033_dragon_should_respawn_f
 
 scoreboard players add @a[tag=foreverworld_test_run] fwtest 1
 tag @a[tag=foreverworld_test_run] remove foreverworld_test_run

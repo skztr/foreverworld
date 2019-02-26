@@ -15,6 +15,10 @@ It acts as normal survival Minecraft, with two key differences:
    blocks of `0 0`. All advancements will be reset, and the contents of Ender
    Chests will be cleared. Other than that, the world remains untouched.
 
+ - If you die after defeating the dragon, the dragon will automatically respawn
+   when you return to The End, and The End's return portal will be closed until
+   the dragon is defeated.
+
 The goal of the above is simple: It is possible to lose your base, if you are
 not careful. But it is also possible to discover an old base, if you are lucky.
 
