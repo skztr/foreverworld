@@ -9,7 +9,7 @@ tag @e[tag=foreverworld_death_countdown,scores={fwcountdown=100..}] add foreverw
 tag @e[tag=foreverworld_death_ready] remove foreverworld_death_countdown
 
 gamemode spectator @e[type=minecraft:player,tag=foreverworld_death_countdown]
-execute at @e[type=minecraft:armor_stand,tag=foreverworld_marker] run tp @e[type=minecraft:player,tag=foreverworld_death_countdown] ~ ~ ~ 180 0
+execute in overworld at @e[type=minecraft:armor_stand,tag=foreverworld_marker] run tp @e[type=minecraft:player,tag=foreverworld_death_countdown] ~ ~ ~ 180 0
 title @e[type=minecraft:player,tag=foreverworld_death_countdown] times 0 200 0
 title @e[type=minecraft:player,tag=foreverworld_death_countdown,tag=foreverworld_died_fake] title {"text":"Loading...","color":"dark_red"}
 title @e[type=minecraft:player,tag=foreverworld_death_countdown,tag=!foreverworld_died_fake] title {"text":"DEAD","color":"dark_red"}
