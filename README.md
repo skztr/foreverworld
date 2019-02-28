@@ -12,8 +12,9 @@ It acts as normal survival Minecraft, with two key differences:
    provided (separately) to remove the "map edge" marker.
 
  - If you die, you will respawn in a random location, somewhere within 24,000
-   blocks of `0 0`. All advancements will be reset, and the contents of Ender
-   Chests will be cleared. Other than that, the world remains untouched.
+   blocks of `0 0`. All advancements and recipes will be reset, and the contents
+   of Ender Chests will be cleared. Other than that, the world remains
+   untouched.
 
  - If you die after defeating the dragon, the dragon will automatically respawn
    when you return to The End, and The End's return portal will be closed until
