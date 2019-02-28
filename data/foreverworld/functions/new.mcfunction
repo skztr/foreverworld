@@ -1,8 +1,8 @@
 # New Players
 
 # Clear tags used in game initialization
-tag @a remove foreverworld_init_player_countdown
-tag @a remove foreverworld_init_player_ready
+tag @a[tag=!foreverworld_player] remove foreverworld_init_player_countdown
+tag @a[tag=!foreverworld_player] remove foreverworld_init_player_ready
 
 # Zero-out scores which may be referenced when initializing identifiers
 scoreboard players set @a[tag=!foreverworld_player] fwpsid 0
