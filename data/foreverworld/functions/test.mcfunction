@@ -33,6 +33,9 @@ execute if entity @s[scores={fwtest=30}] run function foreverworld:test/030_drag
 execute if entity @s[scores={fwtest=31}] run function foreverworld:test/031_dragon_should_respawn_d
 execute if entity @s[scores={fwtest=32}] run function foreverworld:test/032_dragon_should_respawn_e
 execute if entity @s[scores={fwtest=33}] run function foreverworld:test/033_dragon_should_respawn_f
+execute if entity @s[scores={fwtest=34}] run function foreverworld:test/034_game_should_pause_a
+execute if entity @s[scores={fwtest=35}] run function foreverworld:test/035_game_should_pause_b
+execute if entity @s[scores={fwtest=36}] run function foreverworld:test/036_game_should_pause_c
 
 scoreboard players add @a[tag=foreverworld_test_run] fwtest 1
 tag @a[tag=foreverworld_test_run] remove foreverworld_test_run
