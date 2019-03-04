@@ -10,3 +10,4 @@ execute if entity @a[tag=foreverworld_player] run tag @e[tag=foreverworld_marker
 tag @e[tag=foreverworld_marker] add foreverworld_marker_paused
 
 gamerule doDaylightCycle false
+gamerule doWeatherCycle false

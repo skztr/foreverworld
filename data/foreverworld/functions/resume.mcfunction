@@ -4,3 +4,4 @@ execute if entity @e[tag=foreverworld_marker,tag=foreverworld_marker_paused_manu
 tag @e[tag=foreverworld_marker] remove foreverworld_marker_paused_manual
 
 gamerule doDaylightCycle true
+gamerule doWeatherCycle true
