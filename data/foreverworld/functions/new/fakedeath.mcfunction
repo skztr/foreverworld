@@ -1,5 +1,5 @@
 # Must run as a specific player.
-# Fakes the "first death" in order to cause ressurection
+# Fakes the "first death" in order to cause resurrection
 tellraw @s[tag=foreverworld_debug] {"text":"foreverworld:new/fakedeath"}
 
 gamemode spectator @s
