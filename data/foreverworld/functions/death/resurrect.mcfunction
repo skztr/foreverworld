@@ -3,7 +3,7 @@
 tellraw @s[tag=foreverworld_debug] {"text":"foreverworld:death/resurrect"}
 
 # Reset to begining-of-day (you may wish to remove this for multiplayer)
-function foreverworld:sunrise/begin
+function foreverworld:sunrise
 
 # Clear Inventory (shouldn't be necessary, but good for the initial run)
 clear @s
