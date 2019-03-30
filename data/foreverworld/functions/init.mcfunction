@@ -1,3 +1,12 @@
+# Global State
+scoreboard objectives add fwreload dummy
+scoreboard players set #foreverworld_global fwreload 1
+
+scoreboard objectives add fwlocal dummy
+scoreboard objectives add fwstate dummy
+scoreboard objectives add fwinit dummy
+execute unless score #foreverworld_global fwstate matches 0.. run scoreboard players set #foreverworld_global fwstate 0
+
 # Test Tracking
 scoreboard objectives add fwtest dummy
 scoreboard objectives add fwdebug dummy

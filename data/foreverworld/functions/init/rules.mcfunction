@@ -6,5 +6,4 @@ gamerule reducedDebugInfo true
 # Hard Difficulty
 difficulty hard
 
-tag @e[tag=foreverworld_marker] add foreverworld_marker_rules
-say Restart required to ensure compasses point North
+scoreboard players add #foreverworld_global fwinit 1

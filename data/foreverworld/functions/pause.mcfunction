@@ -1,13 +1,13 @@
 say foreverworld:pause
 
 # If already paused, we must have been run "manually". Mark as manual.
-execute if entity @e[tag=foreverworld_marker,tag=foreverworld_marker_paused] run tag @e[tag=foreverworld_marker] add foreverworld_marker_paused_manual
+execute if score #foreverworld_global fwstate matches 2 run scoreboard players set #foreverworld_global fwstate 3
 
 # If there is a player, we must have been run "manually". Mark as manual.
-execute if entity @a[tag=foreverworld_player] run tag @e[tag=foreverworld_marker] add foreverworld_marker_paused_manual
+execute if entity @a[tag=foreverworld_player,gamemode=survival] run scoreboard players set #foreverworld_global fwstate 3
 
-# Mark as paused
-tag @e[tag=foreverworld_marker] add foreverworld_marker_paused
+# Mark as paused unless we're already marked as manual
+execute unless score #foreverworld_global fwstate matches 3 run scoreboard players set #foreverworld_global fwstate 2
 
 gamerule doDaylightCycle false
 gamerule doWeatherCycle false
