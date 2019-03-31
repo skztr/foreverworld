@@ -42,5 +42,5 @@ execute if entity @s[scores={fwtest=39}] run function foreverworld:test/039_deat
 
 scoreboard players add @a[tag=foreverworld_test_run] fwtest 1
 tag @a[tag=foreverworld_test_run] remove foreverworld_test_run
-execute if entity @s[scores={fwtest=28}] run tellraw @s {"text":"Tests Complete"}
-execute if entity @s[scores={fwtest=28}] run scoreboard players set @s fwtest 0
+execute if entity @s[scores={fwtest=40}] run tellraw @s {"text":"Tests Complete"}
+execute if entity @s[scores={fwtest=40}] run scoreboard players set @s fwtest 0
