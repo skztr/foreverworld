@@ -26,9 +26,9 @@ not careful. But it is also possible to discover an old base, if you are lucky.
 # Quickstart
 
 To begin, add this datapack to your server. Once the first player has joined,
-the initialization will run, and you will be prompted to restart the server.
-(restarting the server is required to update the compass position). Restart the
-server, and the game will begin.
+the initialization will run, and you may be prompted to restart the server.
+(restarting the server is required to update the compass position prior to
+Minecraft version 1.14). Restart the server, and the game will begin.
 
 # Notes
 
