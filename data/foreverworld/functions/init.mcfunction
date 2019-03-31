@@ -1,3 +1,16 @@
+# Versions / Upgrade Path
+scoreboard objectives add fw_this_version dummy
+scoreboard players set #foreverworld_global fw_this_version 1
+
+# Version of the current world
+scoreboard objectives add fwversion dummy
+
+# Detect pre-versioned marker
+execute if entity @e[type=minecraft:armor_stand,tag=foreverworld_marker] unless score #foreverworld_global fwversion matches 0.. run scoreboard players set #foreverworld_global fwversion 0
+
+# Default version
+execute unless score #foreverworld_global fwversion matches 0.. run scoreboard players operation #foreverworld_global fwversion = #foreverworld_global fw_this_version
+
 # Global State
 scoreboard objectives add fwreload dummy
 scoreboard players set #foreverworld_global fwreload 1
@@ -5,7 +18,6 @@ scoreboard players set #foreverworld_global fwreload 1
 scoreboard objectives add fwlocal dummy
 scoreboard objectives add fwstate dummy
 scoreboard objectives add fwinit dummy
-execute unless score #foreverworld_global fwstate matches 0.. run scoreboard players set #foreverworld_global fwstate 0
 
 # Test Tracking
 scoreboard objectives add fwtest dummy
@@ -30,7 +42,10 @@ scoreboard objectives add fwdied deathCount
 scoreboard objectives add fwpsid dummy
 scoreboard objectives add fwpsfind dummy
 
-function foreverworld:state
+# Upgrade
+execute unless score #foreverworld_global fwversion >= #foreverworld_global fw_this_version run say upgrade required
+execute unless score #foreverworld_global fwversion >= #foreverworld_global fw_this_version run function foreverworld:upgrade
 
-tag @e[tag=foreverworld_marker] add foreverworld_marker_restarted
-execute unless entity @e[type=minecraft:armor_stand,tag=foreverworld_marker] run function foreverworld:init/spawnchunks
+# Initial State
+execute unless score #foreverworld_global fwstate matches 0.. run say state zero
+execute unless score #foreverworld_global fwstate matches 0.. run scoreboard players set #foreverworld_global fwstate 0
