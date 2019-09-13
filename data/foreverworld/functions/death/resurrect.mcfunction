@@ -11,6 +11,7 @@ clear @s
 # Teleport to a random position within the world
 # The fourth number here is the one to tweak to increase/decrease discovery probability
 spreadplayers 0 0 0 24000 true @s
+execute in overworld at @s run spawnpoint @s ~ ~ ~
 
 execute if entity @s[tag=foreverworld_debug] run function foreverworld:test/debug/once/begin
 execute if entity @s[tag=foreverworld_debug] run tellraw @s {"text":"spread"}
@@ -18,7 +19,6 @@ execute if entity @s[tag=foreverworld_debug] run function foreverworld:test/debu
 execute if entity @s[tag=foreverworld_debug] run function foreverworld:test/debug/once/end
 
 gamemode survival @s
-tag @s add foreverworld_playerstand_needed
 tag @s remove foreverworld_died
 tag @s remove foreverworld_died_fake
 tag @s remove foreverworld_death_cleared

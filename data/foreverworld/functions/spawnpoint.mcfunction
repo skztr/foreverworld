@@ -19,11 +19,5 @@
 # death always teleports them to a completely random location. This is only
 # about returning from The End.
 
-# Give new resurrections a playerstand
-execute as @e[type=minecraft:player,tag=foreverworld_player,tag=foreverworld_playerstand_needed] run function foreverworld:spawnpoint/move_playerstand
-
-# Move the spawnpoint whenever we detect a player in a bed.
-execute as @e[type=minecraft:player,tag=foreverworld_player,nbt=!{SleepTimer:0s}] run function foreverworld:spawnpoint/move_playerstand
-
-# Set the spawnpoint to the location of each player's playerstand
-execute as @e[type=minecraft:player,tag=foreverworld_player] run function foreverworld:spawnpoint/refresh
+# if spawn is not forced, set the player's spawn
+execute as @e[type=minecraft:player,tag=foreverworld_player,nbt=!{SpawnForced:1b}] run function foreverworld:spawnpoint/force
