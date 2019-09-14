@@ -43,6 +43,14 @@ The map NBT structure contains a property, `data.unlimitedTracking` which
 defaults to `1`. Ideally, we would set this to `0`, but I don't know how to
 modify items within a player's inventory in this way.
 
+This version is written to be compatible with Minecraft 1.15. Though not
+thoroughly tested, it should be compatible with earlier versions if the line:
+
+    gamerule doImmediateRespawn true
+
+is removed from `data/foreverworld/functions/init/rules.mcfunction` and
+`data/foreverworld/functions/upgrade/0001_0002.mcfunction`
+
 # Testing
 
 A test suite is included. To test the datapack, run the function
