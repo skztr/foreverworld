@@ -40,6 +40,6 @@ execute in the_end run kill @e[type=item,nbt={Item:{id:"minecraft:obsidian"}},x=
 # Tell the player what to do
 execute in the_end as @e[type=minecraft:player,tag=foreverworld_player,tag=!foreverworld_player_dragon_view,nbt={Dimension:1}] run title @s reset
 execute in the_end as @e[type=minecraft:player,tag=foreverworld_player,tag=!foreverworld_player_dragon_view,nbt={Dimension:1}] run title @s clear
-execute in the_end as @e[type=minecraft:player,tag=foreverworld_player,tag=!foreverworld_player_dragon_view,nbt={Dimension:1}] run title @s times 0 200 0
+execute in the_end as @e[type=minecraft:player,tag=foreverworld_player,tag=!foreverworld_player_dragon_view,nbt={Dimension:1}] run title @s times 0 4 0
 execute in the_end as @e[type=minecraft:player,tag=foreverworld_player,tag=!foreverworld_player_dragon_view,tag=!foreverworld_player_dragon_ritual,nbt={Dimension:1}] run title @s title {"text":"Place The Crystal","color":"dark_purple"}
 execute in the_end as @e[type=minecraft:player,tag=foreverworld_player,tag=!foreverworld_player_dragon_view,tag=foreverworld_player_dragon_ritual,nbt={Dimension:1}] run title @s title {"text":"The Dragon Is Coming","color":"dark_purple"}
