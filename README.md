@@ -2,7 +2,7 @@
 
 Forever World is a custom gamemode for Minecraft, similar to Hardcore Mode.
 
-It acts as normal survival Minecraft, with two key differences:
+It acts as normal survival Minecraft, with several key differences:
 
  - It should be easier to get lost. The compass points "North", rather than
    towards the place you started. The `reducedDebugInfo` option is also set to
