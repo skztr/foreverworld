@@ -12,5 +12,3 @@ execute unless entity @e[tag=foreverworld_marker] run summon minecraft:armor_sta
 scoreboard players set #foreverworld_global fwpsid 0
 
 execute if entity @e[tag=foreverworld_marker] run scoreboard players add #foreverworld_global fwinit 1
-
-execute at @e[tag=foreverworld_marker_chamber,tag=!foreverworld_marker_rules,scores={fwpsfind=1}] run function foreverworld:init/rules
