@@ -39,7 +39,9 @@ scoreboard objectives add fwdead deathCount
 scoreboard objectives add fwdied deathCount
 
 # Spawnpoint tracking
-scoreboard objectives add fwspawn dummy
+scoreboard objectives add fwspawnx dummy
+scoreboard objectives add fwspawny dummy
+scoreboard objectives add fwspawnz dummy
 
 # Upgrade
 execute unless score #foreverworld_global fwversion >= #foreverworld_global fw_this_version run say upgrade required

@@ -11,7 +11,10 @@ clear @s
 # Teleport to a random position within the world
 # The fourth number here is the one to tweak to increase/decrease discovery probability
 spreadplayers 0 0 0 24000 true @s
-execute in overworld at @s run spawnpoint @s ~ ~ ~
+execute store result score @s fwspawnx run data get entity @s Pos[0]
+execute store result score @s fwspawny run data get entity @s Pos[1]
+execute store result score @s fwspawnz run data get entity @s Pos[2]
+function foreverworld:spawnpoint/first
 
 execute if entity @s[tag=foreverworld_debug] run function foreverworld:test/debug/once/begin
 execute if entity @s[tag=foreverworld_debug] run tellraw @s {"text":"spread"}
