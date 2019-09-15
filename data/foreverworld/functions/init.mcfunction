@@ -1,6 +1,6 @@
 # Versions / Upgrade Path
 scoreboard objectives add fw_this_version dummy
-scoreboard players set #foreverworld_global fw_this_version 1
+scoreboard players set #foreverworld_global fw_this_version 2
 
 # Version of the current world
 scoreboard objectives add fwversion dummy
@@ -38,9 +38,10 @@ scoreboard objectives add fwdead deathCount
 # Total Deaths, just for statistics
 scoreboard objectives add fwdied deathCount
 
-# Unique Id for Spawnpoint tracking
-scoreboard objectives add fwpsid dummy
-scoreboard objectives add fwpsfind dummy
+# Spawnpoint tracking
+scoreboard objectives add fwspawnx dummy
+scoreboard objectives add fwspawny dummy
+scoreboard objectives add fwspawnz dummy
 
 # Upgrade
 execute unless score #foreverworld_global fwversion >= #foreverworld_global fw_this_version run say upgrade required

@@ -3,13 +3,6 @@
 tellraw @s[tag=foreverworld_debug] {"text":"foreverworld:death/clear"}
 
 # Remove spawnpoint: Respawn into the death chamber
-function foreverworld:spawnpoint/find_playerstand
-execute in overworld at @e[tag=foreverworld_marker] if entity @e[tag=foreverworld_playerstand_found] run tp @e[tag=foreverworld_playerstand_found] ~ ~ ~
-
-execute if entity @s[tag=foreverworld_debug] run function foreverworld:test/debug/once/begin
-execute if entity @s[tag=foreverworld_debug] as @e[tag=foreverworld_playerstand_found] run function foreverworld:test/debug/location
-execute if entity @s[tag=foreverworld_debug] run function foreverworld:test/debug/once/end
-
 execute in overworld at @e[tag=foreverworld_marker] run spawnpoint @s ~ ~ ~
 
 # Revoke all Advancements
