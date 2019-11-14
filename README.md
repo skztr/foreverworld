@@ -11,7 +11,7 @@ It acts as normal survival Minecraft, with several key differences:
    [resourcepack](http://www.github.com/skztr/foreverworld-resourcepack) is
    provided (separately) to remove the "map edge" marker.
 
- - If you die, you will respawn in a random location, somewhere within 24,000
+ - If you die, you will respawn in a random location, somewhere within 26,240
    blocks of `0 0`. All advancements and recipes will be reset, and the contents
    of Ender Chests will be cleared. Other than that, the world remains
    untouched.
@@ -32,10 +32,11 @@ Minecraft version 1.14). Restart the server, and the game will begin.
 
 # Notes
 
-The number "24,000" can be easily modified, to make it more, or less, likely
+The number "26,240" can be easily modified, to make it more, or less, likely
 that a past base could be discovered. The number has been chosen as it should
-always place the player within the area of concentric rings containing
-strongholds (which generate within 24,192 blocks of `0 0`).
+always place the player within 1 fully-zoomed-out map area of the area of
+concentric rings containing strongholds (which generate within 24,192 blocks of
+`0 0`).
 
 Map behaviour has not been changed for a very simple reason: I don't know how.
 The map NBT structure contains a property, `data.unlimitedTracking` which
