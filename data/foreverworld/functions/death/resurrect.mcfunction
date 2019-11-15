@@ -11,11 +11,6 @@ clear @s
 # Teleport to a random position within the world
 function foreverworld:spawnpoint/new
 
-execute if entity @s[tag=foreverworld_debug] run function foreverworld:test/debug/once/begin
-execute if entity @s[tag=foreverworld_debug] run tellraw @s {"text":"spread"}
-execute if entity @s[tag=foreverworld_debug] run function foreverworld:test/debug/location
-execute if entity @s[tag=foreverworld_debug] run function foreverworld:test/debug/once/end
-
 gamemode survival @s
 tag @s remove foreverworld_died
 tag @s remove foreverworld_died_fake

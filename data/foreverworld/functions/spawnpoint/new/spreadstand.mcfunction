@@ -18,6 +18,8 @@
 # locations until a suitable position is found. This is expected to happen about
 # once every four to five attempts (~22.5% of the time)
 
+scoreboard players add @e[tag=foreverworld_spawnpoint] fwlocal 1
 spreadplayers 0 0 0 26240 true @s
+
 execute if entity @s[x=0,z=0,distance=..26240.999999] run function foreverworld:spawnpoint/new/finish
 execute if entity @s[x=0,z=0,distance=26241..] run function foreverworld:spawnpoint/new/spreadstand
