@@ -1,0 +1,4 @@
+{
+    "function":"set_nbt",
+    "tag":"{LodestoneTracked:0b,LodestoneDimension:\"minecraft:overworld\",LodestonePos:{X:0,Y:1,Z:-5000000}}"
+}
