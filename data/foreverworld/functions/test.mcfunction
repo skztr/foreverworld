@@ -39,8 +39,24 @@ execute if entity @s[scores={fwtest=36}] run function foreverworld:test/036_game
 execute if entity @s[scores={fwtest=37}] run function foreverworld:test/037_death_clears_recipes_a
 execute if entity @s[scores={fwtest=38}] run function foreverworld:test/038_death_clears_recipes_b
 execute if entity @s[scores={fwtest=39}] run function foreverworld:test/039_death_clears_recipes_c
+execute if entity @s[scores={fwtest=40}] run function foreverworld:test/040_returning_to_the_nether_a
+execute if entity @s[scores={fwtest=41}] run function foreverworld:test/041_returning_to_the_nether_b
+execute if entity @s[scores={fwtest=42}] run function foreverworld:test/042_returning_to_the_nether_c
+execute if entity @s[scores={fwtest=43}] run function foreverworld:test/043_returning_to_the_nether_d
+execute if entity @s[scores={fwtest=44}] run function foreverworld:test/044_returning_to_the_nether_e
+execute if entity @s[scores={fwtest=45}] run function foreverworld:test/045_returning_to_the_nether_f
+execute if entity @s[scores={fwtest=46}] run function foreverworld:test/046_returning_to_the_nether_g
+execute if entity @s[scores={fwtest=47}] run function foreverworld:test/047_returning_to_the_nether_h
+execute if entity @s[scores={fwtest=48}] run function foreverworld:test/048_returning_to_the_nether_i
+execute if entity @s[scores={fwtest=49}] run function foreverworld:test/049_returning_to_the_nether_j
+execute if entity @s[scores={fwtest=50}] run function foreverworld:test/050_returning_to_the_nether_k
+execute if entity @s[scores={fwtest=51}] run function foreverworld:test/051_returning_to_the_nether_l
+execute if entity @s[scores={fwtest=52}] run function foreverworld:test/052_returning_to_the_nether_m
+execute if entity @s[scores={fwtest=53}] run function foreverworld:test/053_returning_to_the_nether_n
+execute if entity @s[scores={fwtest=54}] run function foreverworld:test/054_returning_to_the_nether_o
+execute if entity @s[scores={fwtest=55}] run function foreverworld:test/055_returning_to_the_nether_p
 
 scoreboard players add @a[tag=foreverworld_test_run] fwtest 1
 tag @a[tag=foreverworld_test_run] remove foreverworld_test_run
-execute if entity @s[scores={fwtest=40}] run tellraw @s {"text":"Tests Complete"}
-execute if entity @s[scores={fwtest=40}] run scoreboard players set @s fwtest 0
+execute if entity @s[scores={fwtest=56}] run tellraw @s {"text":"Tests Complete"}
+execute if entity @s[scores={fwtest=56}] run scoreboard players set @s fwtest 0
