@@ -1,6 +1,6 @@
 # Versions / Upgrade Path
 scoreboard objectives add fw_this_version dummy
-scoreboard players set #foreverworld_global fw_this_version 2
+scoreboard players set #foreverworld_global fw_this_version 3
 
 # Version of the current world
 scoreboard objectives add fwversion dummy
