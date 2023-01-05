@@ -11,4 +11,4 @@ execute as @e[type=minecraft:player,tag=foreverworld_player] run function foreve
 
 # if the player is in the death chamber, but is not dead, their spawnpoint was
 # invalid. We should return them to their "first" spawnpoint.
-execute at @e[tag=foreverworld_marker] positioned ~ 0 ~ as @e[type=minecraft:player,tag=foreverworld_player,scores={fwdead=0},dx=1,dy=256,dz=1] run function foreverworld:spawnpoint/first
+execute at @e[tag=foreverworld_marker] positioned ~ -64 ~ as @e[type=minecraft:player,tag=foreverworld_player,scores={fwdead=0},dx=1,dy=384,dz=1] run function foreverworld:spawnpoint/first
